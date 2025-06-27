@@ -26,19 +26,23 @@ Blitz Rating: 1289
 
 ```bash
 pip install requests pytz
-
-## Run the script
-
+```
+3. Run the script
+```bash
 python3 chess_rating_tracker.py
-
+```
 ## (Optional) Set up a cron job to log ratings daily (macOS / Linux)
 
 Edit the crontab: 
+```bash
 crontab -e
+```
 
 Add a line like this to run every day at 7 PM (make sure to update the path to match your 
 local environment)::
+```bash
 0 19 * * * /usr/bin/python3 /full/path/to/chess_rating_tracker.py
+```
 
 ## License
 
